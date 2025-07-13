@@ -109,7 +109,7 @@ ul {
 }
 
 .pigTile h3 {
-  color: #FBB;
+  color: rgb(228, 129, 129);
 }
 
 .minPigTile {
@@ -125,10 +125,21 @@ ul {
 }
 
 .pigTile:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
+.pigTile img{
+  height: 400px;
+  width: 400px;
+  border: 1px solid #3B0B0B;
+}
 
+.hogDetails {
+  display: none;
+}
+.hogShow{
+  display: block;
+}
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
   height: 80px;
@@ -139,7 +150,36 @@ ul {
   padding: 1%;
   clear: both;
 }
+.filterForm{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+  padding: 10px;
+  margin: 1% auto;
+  border: 1px solid #3B0B0B;
+  width: fit-content;
+  background-color: #f5a9bc77;
+  border-radius: 10px;
+  font-size: medium;
 
+}
+.hogForm{
+  display:flex;
+  flex-wrap:wrap;
+ justify-items:flex-start;
+ align-items:center;
+ gap: 20px;
+ text-align: center;
+ margin: 30px;
+ font-size: small;
+ label{
+  text-align: center;
+  font-weight: bold;
+  color: #3B0B0B;         
+ }
+}
 
 @keyframes App-logo-spin {
   from {
